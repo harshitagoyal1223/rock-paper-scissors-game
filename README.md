@@ -1,31 +1,41 @@
-import random
+# Rock, Paper, Scissors Game
 
-def get_user_choice():
-    user_choice = input("Enter user input Stone, Paper, Scissors: ").lower()
-    if user_choice in ["rock", "paper", "scissors"]:
-      return user_choice
-    else:
-       print("Invalid choice")
-      
-def get_computer_choice():
-   choices = ["rock", "paper", "scissors"]
-   return random.choice(choices)
+This Python script allows you to play the classic game of Rock, Paper, Scissors against the computer.
 
-def determine_winner(user_choice, computer_choice):
-    if user_choice == computer_choice:
-        return "It's a tie!"
-    elif (user_choice == "rock" and computer_choice == "scissors") or\
-        (user_choice == "scissors" and computer_choice == "paper") or\
-            (user_choice == "paper" and computer_choice == "rock"):
-                return "You Win!"
-    else:
-                return "You Lose!"
-            
-def start_game():
-    user_choice = get_user_choice()
-    computer_choice = get_computer_choice()
-    print("Computer's choice:",computer_choice)
-    result = determine_winner(user_choice,computer_choice)
-    print("Result is: ",result)
-    
-start_game()
+## How to Use
+
+1. **Clone the repository:**
+
+   ```
+   git clone https://github.com/harshitagoyal1223/rock-paper-scissors-game/
+   ```
+
+2. **Navigate to the directory:**
+
+   ```
+   cd rock-paper-scissors-game
+   ```
+
+3. **Run the script:**
+
+   ```
+   python rock_paper_scissors.py
+   ```
+
+4. **Follow the prompts:**
+
+   Enter your choice when prompted ("rock", "paper", or "scissors"). The computer will randomly select its choice and the result will be displayed.
+
+## Game Rules
+
+- Rock beats Scissors
+- Scissors beats Paper
+- Paper beats Rock
+
+## Example
+
+```
+Enter user input Stone, Paper, Scissors: rock
+Computer's choice: paper
+Result is: You Lose!
+```

@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun  2 15:06:01 2024
-
-@author: harsh
-"""
 import random
 
 def get_user_choice():
